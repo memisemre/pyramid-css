@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "UI Framework",
   "main": "index.js",
+  "sass": "pyramid.scss",
+  "style": "pyramid.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
