@@ -6,13 +6,13 @@
   "sass": "pyramid.scss",
   "style": "pyramid.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo \"Pyramid CSS\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/memisemre/pyramid-css.git"
   },
-  "author": "",
+  "author": "Emre Memis",
   "license": "MIT",
   "homepage": "https://github.com/memisemre/pyramid-css",
   "devDependencies": {
