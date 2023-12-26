@@ -21,20 +21,20 @@ function sassTask() {
   return gulp.src(['sass/*.scss', 'sass/**/*.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(rename({ basename: 'pyramid' }))
-    .pipe(gulp.dest('dist/styles'));
+    .pipe(gulp.dest('dist/'));
 }
 
 function minifycss() {
-  return gulp.src('dist/styles/pyramid.css')
+  return gulp.src('dist/pyramid.css')
     .pipe(cleanCSS())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('dist/styles'));
+    .pipe(gulp.dest('dist/'));
 }
 
 function addHeader() {
-  return gulp.src('dist/styles/*.css')
+  return gulp.src('dist/*.css')
     .pipe(header(headerComment))
-    .pipe(gulp.dest('dist/styles'));
+    .pipe(gulp.dest('dist/'));
 }
 
 function watch() {
