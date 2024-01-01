@@ -6,7 +6,8 @@
   "sass": "pyramid.scss",
   "style": "pyramid.css",
   "scripts": {
-    "start": "gulp",
+    "dev": "gulp watch",
+    "setup": "gulp styles",
     "postinstall": "gulp styles"
   },
   "repository": {
